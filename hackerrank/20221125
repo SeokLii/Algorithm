@@ -1,0 +1,22 @@
+# 1.Say "Hello, World!" With Python
+
+# 2.Python If-Else
+
+# 3.Python: Division
+# > //: 나눗셈 결과를 정수형(int)으로 반환 /: 나눗셈 결과를 실수형(float)으로 반환
+
+# 4.Loops
+
+# 5.Write a function
+# > 함수 사용 및 % 사용
+
+# 6.Print Function
+# > end="": print 구문 마지막에 들어가는 값 기본 값 개행, sep="": 출력값들 사이의 구분을 위해 들어가는 값
+
+# 7.Print Function
+
+# 8.List Comprehensions
+
+# 9.Find the Runner-Up Score!
+# > sorted(): 정렬된 새로운 리스트 반환, sort(): 리스트 자체를 정렬
+
