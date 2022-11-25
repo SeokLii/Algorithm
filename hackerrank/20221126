@@ -1,0 +1,18 @@
+# 10.Nested Lists
+
+# 11.Finding the percentage
+# > 딕셔너리 안에 리스트 및 함수를 넣을 수 있고, 중복되는 값은 넣을 수 없다(=Set)
+# > map()은 map 객체이므로 리스트나 튜플로 변환하여 사용하여야 한다. map(적용시킬 함수, 적용할 값들)
+# > 변수 앞 * 혹은 **은 가변인자로 사용하고 name, *line = input().split() 에 Harsh 25 26.5 28를 넣으면 linedp 25~28 값이 들어감
+# > tuple 내부 값을 변경하거나 삭제할 수 없다.
+
+# 12.Lists
+
+# 13.Tuples
+
+# 14.sWAP cASE
+# > 문자열의 특정 문자를 바꿀 때는 리스트에 넣어서 join으로 결합한다
+# > swapcase() 함수가 존재하는데 코테에서 사용가능한지는 모르겠음
+
+# 15.String Split and Join
+# > split() 함수는 문자열을 잘라서 리스트 형식으로 반환
