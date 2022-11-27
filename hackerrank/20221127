@@ -20,3 +20,4 @@
 # 23.String Formatting
 # > 10진법 Decimal 8진법(0o) Octal 16진법(0x) Hexadecimal 2진법(0b) Binary
 # > bin(), oct(), hex() 숫자를 각 진수의 형태의 문자열로 반환
+# > 진법 앞의 변수 값 ox 같은 것 제거할 때는 format(number, 'o')로 문자열 index로
