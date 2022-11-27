@@ -1,0 +1,22 @@
+# 16.What's Your Name?
+# > join()은 리스트를 문자열로 합쳐서 반환해준다.
+
+# 17.Mutations
+
+# 18.Find a String
+
+# 19.String Validators
+# > any() all() 은 True, False 의 여부를 확인하고 True나 False 반환
+
+# 20.Text Alignment
+
+# 21.Text Wrap
+# > textwrap 라이브러리 사용하면 원하는 길이만큼 줄일 수 있다
+# > textwrap.wrap(string, width) textwrap.fill(string, width) == '\n'.join(textwrap.wrap(string, width))
+
+# 22.Designer Door Mat
+# > string.rjust(width, '') width는 string을 포함하는 길이로 len(str)이 3이고 width 가 10 이면 공백은 7만 생김
+
+# 23.String Formatting
+# > 10진법 Decimal 8진법(0o) Octal 16진법(0x) Hexadecimal 2진법(0b) Binary
+# > bin(), oct(), hex() 숫자를 각 진수의 형태의 문자열로 반환
