@@ -5,3 +5,5 @@
 # "HI" 만 split() 하면ㅁ ['HI'] 반한됨 Split('')는 오류남
 
 # 31.Polar Coordinates
+# > Complex() 로 복소수를 만들 수 있다.
+# > cmath.phase() 위상각을 만들 수 있다.
