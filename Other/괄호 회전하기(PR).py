@@ -1,7 +1,6 @@
 #괄호 문제는 스택 구조로 풀이
 from collections import deque
 
-
 def solution(s):
     answer = 0
     deq = deque(s)
@@ -31,7 +30,6 @@ def solution(s):
                         check.popleft()
                         count += 1
                 else:
-                    count += 100000
                     break
 
         if len(check) == 0 and count == len(s) // 2:
