@@ -45,6 +45,7 @@ def solution(n, k, enemy):
     return round_
 
 # 세번째 해결안
+# 프로그래머스에서 가져온 코드로 훨씬 간단하고 효율적으로 짜여져 있음
 import heapq as hq
 def solution(n, k, enemy):
     q = enemy[:k]
