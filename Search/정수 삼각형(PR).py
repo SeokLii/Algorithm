@@ -1,22 +1,13 @@
 def solution(triangle):
-    answer = 0
-    if len(triangle) == 1:
-        return triangle[0]
-    else:
-        triangle[1][0] += triangle[0][0]
-        triangle[1][1] += triangle[0][0]
+    for i in range(1, len(triangle)):
+        for j in range(len(triangle[i])):
+            # 첫번째 값과 마지막 값은 그대로 더해주고 그 외의 값은 두 가지 값 중 큰 값만 넣어준다
+            # 메모제이션을 통해서 값을 계속 더해가면 따로 모든 케이스를 확인하지 않고도 알 수 있다.
+            if j == 0:
+                triangle[i][j] += triangle[i - 1][j]
+            elif j == len(triangle[i]) - 1:
+                triangle[i][j] += triangle[i - 1][j - 1]
+            else:
+                triangle[i][j] += max(triangle[i - 1][j - 1], triangle[i - 1][j])
 
-        for i in range(1, len(triangle)):
-            print()
-            for j in range(len(triangle[i])):
-                print(j, end='')
-                # if j == 0:
-                #     triangle[i][j] += triangle[i-1][j]
-                # elif j == len(i):
-                #     triangle[i][j] += triangle[i-1][j-1]
-                # else:
-                #     triangle[i][j] += max(triangle[i-1][j-1], triangle[i-1][j])
-
-    print(len(triangle))
-    print(len(triangle[1]))
-    return 0  # max(answer[-1])
+    return max(triangle[-1])
