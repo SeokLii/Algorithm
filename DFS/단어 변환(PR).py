@@ -1,5 +1,29 @@
-answer = 0
+# 잘못된 풀이
+def solution(begin, target, words):
+    answer = 1
+    queue = [begin]
 
+    print(queue)
+    while queue:
+        if queue[0] == target:
+            return answer
+        for i in range(len(queue[0])):
+            if queue[0][i] != target[i]:
+                sub = queue[0][:i] + target[i] + queue[0][i + 1:]
+                print(sub)
+                if sub in words:
+                    print(sub)
+                    queue.append(sub)
+        print(queue)
+        queue.pop(0)
+        answer += 1
+
+    print(queue)
+    return 0
+
+
+# 잘못된 풀이
+answer = 0
 
 def solution(begin, target, words):
     global answer
