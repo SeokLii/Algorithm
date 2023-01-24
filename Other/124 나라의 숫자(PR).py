@@ -9,10 +9,6 @@ def solution(n):
             n = n//3 - 1
     return answer[::-1]
 
-
-
-
-
 from collections import deque
 
 def solution(n):
@@ -37,39 +33,6 @@ def solution(n):
             answer[i] = '4'
 
     return str(int(''.join(answer)))
-
-
-1
-1
-2
-2
-3
-10
-4
-4
-11
-5
-12
-6
-20
-14
-7
-21
-8
-22
-9
-100
-24
-10
-101
-41
-11
-110
-
-
-
-
-
 
 # K진법 구하고 0이 나오는 숫자에 4를 대신 넣어주면 됨
 # 결국은 3진법을 구하는 문제
