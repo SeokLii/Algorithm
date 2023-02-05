@@ -2,11 +2,10 @@
 def solution(stones, k):
     left, right = min(stones), max(stones)
     while left <= right:
-        temp = stones[:]
         mid = (left + right) // 2
         cnt = 0
-        for t in temp:
-            if t - mid <= 0:
+        for i in stones:
+            if i - mid <= 0:
                 cnt += 1
             else:
                 cnt = 0
@@ -18,3 +17,4 @@ def solution(stones, k):
             left = mid + 1
 
     return left
+
