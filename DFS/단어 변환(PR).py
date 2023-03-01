@@ -1,3 +1,42 @@
+from collections import defaultdict
+
+# DFS에 필요한 데이터를 직접 생성하고, DFS를 진행하는 문제
+def solution(begin, target, words):
+    # words 데이터 간의 연결 리스트 생성
+    Ldic = defaultdict(list)
+    words.append(begin)
+    for i in words:
+        for j in words:
+            check = 0
+            for n in range(len(j)):
+                if i[n] == j[n]:
+                    check += 1
+            if check == len(j) - 1:
+                Ldic[i].append(j)
+
+    # DFS
+    answer = - 1
+    visitor = []
+    stack = [begin]
+
+    while stack:
+        check = 0
+        answer += 1
+        q = stack.pop()
+        if q == target:
+            return answer
+
+        if q not in visitor:
+            visitor.append(q)
+            for i in Ldic[q]:
+                if i not in visitor:
+                    check += 1
+                    stack.append(i)
+            if check == 0:
+                answer -= 1
+
+    return 0
+
 # 잘못된 풀이
 def solution(begin, target, words):
     answer = 1
@@ -20,7 +59,6 @@ def solution(begin, target, words):
 
     print(queue)
     return 0
-
 
 # 잘못된 풀이
 answer = 0
