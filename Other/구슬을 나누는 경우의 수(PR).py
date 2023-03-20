@@ -1,5 +1,3 @@
-from itertools import combinations
-
+from math import factorial
 def solution(balls, share):
-    balls_list = [1 for i in range(balls)]
-    return len(list(combinations(balls_list, share)))
+    return factorial(balls) // (factorial(balls-share) * factorial(share))
