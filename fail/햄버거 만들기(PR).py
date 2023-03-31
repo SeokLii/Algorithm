@@ -14,7 +14,7 @@ def solution(ingredient):
 
     return answer
 
-#잘못된 풀이
+#잘못된 풀이..
 #시간을 단축하기 위해 deque를 썻지만,
 # sliceing 하기위해 deque를 list로 변경해주는 과정이 O(n) 만큼 더 많은 시간을 사용하게됨
 
